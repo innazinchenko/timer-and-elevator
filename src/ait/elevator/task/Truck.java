@@ -14,7 +14,7 @@ public class Truck implements Runnable {
         this.nRaces = nRaces;
         this.capacity = capacity;
         this.elevator = elevator;
-        this.elevator = secondElevator;
+        this.secondElevator = secondElevator;
     }
 
     @Override
