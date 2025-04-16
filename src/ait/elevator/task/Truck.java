@@ -19,11 +19,11 @@ public class Truck implements Runnable {
 
     @Override
     public void run() {
-        int halfUnloading = capacity / 2;
+
         for (int i = 0; i < nRaces; i++) {
             synchronized (monitor) {
-                elevator.add(halfUnloading);
-                secondElevator.add(halfUnloading);
+                elevator.add(capacity / 2);
+                secondElevator.add(capacity / 2);
             }
         }
     }
